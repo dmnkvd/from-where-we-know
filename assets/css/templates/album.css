@@ -97,10 +97,13 @@ li + li{
 .links{
     font-size: var(--font-size-xs);
     font-family: var(--font-family-text); 
+    padding-top: var(--font-size-s);
 }
 
 .links a{
     display: block;
+    padding-top: var(--font-size-xs);
+
 }
 
 
