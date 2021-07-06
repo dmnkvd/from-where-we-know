@@ -1,6 +1,8 @@
 <?php snippet('header') ?>
+
 <?php?>
         <figcaption class="artists-title-name">
+          
            <p><?= $page->title() ?></p>
            <p><?= $page->projectname() ?></p>   
         </figcaption>
@@ -9,43 +11,18 @@
 
 <div class="wrapper">
 
+
 <div class="first-pane">
 
  <?php foreach($gallery as $image): ?>
-  <div class="content-block image">
+  <div class="image">
     <img src="<?= $image->link()->or($image->url())->url() ?>">
   </div>
   <?php endforeach ?>
 
-</div>
 
-<div class="mid-pane">
-
-<ul>
-      <?php foreach ($page->ref()->toStructure() as $ref): ?>
-  <li>
-  <a href="<?php echo $ref->link() ?>" target="_blank">
-    <?= $ref->text() ?> 
-  </a>
-</li>
-<li>
-<?php if ($ref->quote()->isNotEmpty()): ?>
-      <p2><?= $ref->quote()->kt() ?></p2>
-<?php endif ?>
-</li>
-<?php endforeach ?>
-</ul>
-
-</div>
-
-<div class="last-pane album-decription">
-    
-<?php if ($page->description()->isNotEmpty()): ?>
-      <p><?= $page->description()->kt() ?></p>
-<?php endif ?>
-
-<?php foreach($page->kirbytag() as $kirbytag): ?>
-
+  <?php foreach($page->kirbytag() as $kirbytag): ?>
+    <div class="links"
 <?php if ($page->link()->isNotEmpty()): ?>
 <?= kirbytag([
 'link' => $page->link(),
@@ -61,8 +38,40 @@
 ]);
 ?>
 <?php endif ?>
+</div>
 <?php endforeach ?>
-</figure>
+
+</div>
+
+<div class="second-pane">
+
+<div class="left-inpane">
+<ul>
+      <?php foreach ($page->ref()->toStructure() as $ref): ?>
+        <li>
+<?php if ($ref->quote()->isNotEmpty()): ?>
+      <p2><?= $ref->quote()->kt() ?></p2>
+<?php endif ?>
+</li>
+  <li>
+  <a href="<?php echo $ref->link() ?>" target="_blank">
+    <p><?= $ref->text() ?></p>
+  </a>
+</li>
+<?php endforeach ?>
+</ul>
+
+</div>
+
+
+<div class="right-inpane album-decription">
+    
+<?php if ($page->description()->isNotEmpty()): ?>
+      <p><?= $page->description()->kt() ?></p>
+<?php endif ?>
+
+
+</div>
 </div>
 
 
