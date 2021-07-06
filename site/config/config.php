@@ -13,5 +13,22 @@ return [
         'methods' => [
             'password' => ['2fa' => true]
         ]
+    ],
+    'routes' => [
+        [
+            'pattern' => '(:any)',
+            'action'  => function ($uid) {
+                $page = page($uid);
+                if (!$page) $page = page('artist/' . $uid);
+                if (!$page) $page = site()->errorPage();
+                return site()->visit($page);
+            }
+        ],
+        [
+            'pattern' => 'artist/(:any)',
+            'action'  => function ($uid) {
+                go($uid);
+            }
+        ]
     ]
 ];
