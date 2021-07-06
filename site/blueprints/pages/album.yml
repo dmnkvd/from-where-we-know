@@ -35,20 +35,29 @@ columns:
     fields:
       projectname:
         type: text
+        label: Title of the project
       description:
         type: textarea
+        label: Description of the project
       ref:
         label: 7 References
         type: structure
         fields:
           link:
-            label: Link Ref
+            label: Link Reference
             type: text
+            help: If you have link to your source
             width: 1/1
           text:
-            label: Link Caption
+            label: Reference Caption
             type: text
-            width: 1/1        
+            width: 1/1
+            help: This text is what you see instead the link (for example mla source of the book)
+          quote:
+            type: text  
+            label: Quote 
+            help: If you want write your favourite quote
+            width: 1/1
       link:
         type: url
         text: textarea

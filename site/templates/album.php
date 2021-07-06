@@ -6,12 +6,10 @@
         </figcaption>
       <?php?>
 
-<main class="album">
-
 
 <div class="wrapper">
 
-<div class="left-pane">
+<div class="first-pane">
 
  <?php foreach($gallery as $image): ?>
   <div class="content-block image">
@@ -19,64 +17,53 @@
   </div>
   <?php endforeach ?>
 
-
 </div>
-<div class="right-pane">
 
+<div class="mid-pane">
 
-      <figure class="album-decription">
-
-      <div class="popup" onclick="myFunction()">
-      <?php?>
-        <figcaption id="references">
-           <p>7 references</p>     
-        </figcaption>
-      <?php?>
-
-      <span class="popuptext" id="myPopup">
-        <ul>
+<ul>
       <?php foreach ($page->ref()->toStructure() as $ref): ?>
   <li>
   <a href="<?php echo $ref->link() ?>" target="_blank">
     <?= $ref->text() ?> 
   </a>
 </li>
+<li>
+<?php if ($ref->quote()->isNotEmpty()): ?>
+      <p2><?= $ref->quote()->kt() ?></p2>
+<?php endif ?>
+</li>
 <?php endforeach ?>
 </ul>
-      </span>
-    </div>
 
-    <?php if ($page->description()->isNotEmpty()): ?>
-          <p><?= $page->description()->kt() ?></p>
-    <?php endif ?>
+</div>
 
+<div class="last-pane album-decription">
     
+<?php if ($page->description()->isNotEmpty()): ?>
+      <p><?= $page->description()->kt() ?></p>
+<?php endif ?>
 
-    <?php foreach($page->kirbytag() as $kirbytag): ?>
+<?php foreach($page->kirbytag() as $kirbytag): ?>
 
 <?php if ($page->link()->isNotEmpty()): ?>
 <?= kirbytag([
-    'link' => $page->link(),
-    'text'  => $page->descriptionlink()
-  ]);
-  ?>
+'link' => $page->link(),
+'text'  => $page->descriptionlink()
+]);
+?>
 <?php endif ?>
 
 <?php if ($page->website()->isNotEmpty()): ?>
 <?= kirbytag([
-    'link' => $page->website(),
-    'text'  => $page->descriptionwebsite()
-  ]);
-  ?>
+'link' => $page->website(),
+'text'  => $page->descriptionwebsite()
+]);
+?>
 <?php endif ?>
 <?php endforeach ?>
 </figure>
 </div>
-
-</div>
-
-
-</main>
 
 
 <?= js('assets/js/templates/album.js') ?>

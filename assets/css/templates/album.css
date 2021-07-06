@@ -1,11 +1,38 @@
+.wrapper {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+  }
+
+.first-pane {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.mid-pane {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.last-pane {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+
+
 .artists-title-name{
     text-align: center;
     padding: var(--flow-space) 0;
-    width:100vw;
+    width:100%;
     font-size: var(--font-size-s);
     display: grid;
     bottom:0;
-    position: absolute;
+    position: fixed;
 }
 
 .artists-title-name:hover{
@@ -13,28 +40,13 @@
 }
 
 figcaption{
-    position: fixed;
-}
-
-.popuptext{
-    width:100vw;
-}
-
-.popuptext li{
-padding-bottom:var(--font-size-xs);
-}
-
-.popup .popuptext {
-    width: 60vw;
-    bottom: 20vh;
-    left: -60vw;
 
 }
+
+
 
 #references{
     text-decoration: underline;
-
-
 }
 
 .image{
@@ -53,48 +65,16 @@ img{
 }
 
 .album-decription{
-    margin-top: var(--flow-space-top);
-    padding-right: var(--font-size-m);
-    position: absolute;
-    padding-left: var(--font-size-l);
     font-size: var(--font-size-xs);
     font-family: var(--font-family-text);
 }
+
 p {
     display: block;
     padding-bottom: var(--font-size-s);
 }
 
-.wrapper {
-    height: 100%;
-    text-align: left;
-  }
+
   
-  
-  .left-pane {
-    width: 48%;
-    display: inline-block;
-    overflow-y: scroll;
-  }
-  
-  .right-pane {
-    margin-top: 0px;
-    width: 48%;
-    display: inline-block;
-    overflow-y: scroll;
-  }
-  
-  .content-block {
-    width: 50%;
-    display: inline-block;
-  }
-  
-  
-  .content-block img
-  {
-    max-width:100%;
-    max-height:100%;
-    margin:auto;
-    display:block;
-  }
+ 
   
