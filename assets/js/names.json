@@ -1,0 +1,215 @@
+{
+  "students": [
+    {
+      "name": "Centre"
+    },
+    {
+      "name": "Ocean Albin",
+      "department": "GD"
+    },
+    {
+      "name": "Sacha van Alfen",
+      "department": "GD"
+    },
+    {
+      "name": "Eunjin An",
+      "department": "GD"
+    },
+    {
+      "name": "Fabiola van den Berg",
+      "department": "GD"
+    },
+    {
+      "name": "Rafael Colmanetti",
+      "department": "GD"
+    },
+    {
+      "name": "Daniela Damaschin",
+      "department": "GD"
+    },
+    {
+      "name": "Radek Górniak",
+      "department": "GD"
+    },
+    {
+      "name": "Eva-Maria Horvath",
+      "department": "GD"
+    },
+    {
+      "name": "Handi Kim",
+      "department": "GD"
+    },
+    {
+      "name": "Eunji Lee",
+      "department": "GD"
+    },
+    {
+      "name": "Adriana Navarro Villacampa",
+      "department": "GD"
+    },
+    {
+      "name": "Karoliina Pärnänen",
+      "department": "GD"
+    },
+    {
+      "name": "Kilia Robustella",
+      "department": "GD"
+    },
+    {
+      "name": "Anke Sondi Rumohr",
+      "department": "GD"
+    },
+    {
+      "name": "Mika Schalks",
+      "department": "GD"
+    },
+    {
+      "name": "Malik Saib-Mezghiche",
+      "department": "GD"
+    },
+    {
+      "name": "Ian Scheufler",
+      "department": "GD"
+    },
+    {
+      "name": "Olga Elliot Schou",
+      "department": "GD"
+    },
+    {
+      "name": "Kristiana Marija Sproge",
+      "department": "GD"
+    },
+    {
+      "name": "Iana Abrasheva",
+      "department": "GD"
+    },
+    {
+      "name": "Ivi Apostolatos",
+      "department": "GD"
+    },
+    {
+      "name": "Emma Benozzi",
+      "department": "GD"
+    },
+    {
+      "name": "Ralph Bruens",
+      "department": "GD"
+    },
+    {
+      "name": "Isabelle Giacomelli",
+      "department": "GD"
+    },
+    {
+      "name": "Kexin Hao",
+      "department": "GD"
+    },
+    {
+      "name": "Linea Lan Cai Fabricius",
+      "department": "GD"
+    },
+    {
+      "name": "Merel Meijer",
+      "department": "GD"
+    },
+    {
+      "name": "Aurora Navarro Villacampa",
+      "department": "GD"
+    },
+    {
+      "name": "Michelle Janssen",
+      "department": "GD"
+    },
+    {
+      "name": "Tereza Nováková",
+      "department": "GD"
+    },
+    {
+      "name": "Soyun Park",
+      "department": "GD"
+    },
+    {
+      "name": "Ada Popowicz",
+      "department": "GD"
+    },
+    {
+      "name": "Vincent Rheinberger",
+      "department": "GD"
+    },
+    {
+      "name": "Sjors Rigters",
+      "department": "GD"
+    },
+    {
+      "name": "Aliz Soos",
+      "department": "GD"
+    },
+    {
+      "name": "Agata Markowska",
+      "department": "GD"
+    },
+    {
+      "name": "Dominik Vrabič Dežman",
+      "department": "GD"
+    },
+    {
+      "name": "Amanda Verberne",
+      "department": "GD"
+    },
+    {
+      "name": "Katie Baselj",
+      "department": "NLN"
+    },
+    {
+      "name": "Justine Corrijn",
+      "department": "NLN"
+    },
+    {
+      "name": "Sophie Czich",
+      "department": "NLN"
+    },
+    {
+      "name": "Dario Di Paolantonio",
+      "department": "NLN"
+    },
+    {
+      "name": "Esther van der Heijden",
+      "department": "NLN"
+    },
+    {
+      "name": "Tuana Inhan",
+      "department": "NLN"
+    },
+    {
+      "name": "Felix Meermann",
+      "department": "NLN"
+    },
+    {
+      "name": "Lance Laoyan",
+      "department": "NLN"
+    },
+    {
+      "name": "Marcin Liminowicz",
+      "department": "NLN"
+    },
+    {
+      "name": "Pablo Perez",
+      "department": "NLN"
+    },
+    {
+      "name": "Taya Reshetnik",
+      "department": "NLN"
+    },
+    {
+      "name": "Elinor Salomon",
+      "department": "NLN"
+    },
+    {
+      "name": "Natalia Śliwińska",
+      "department": "NLN"
+    },
+    {
+      "name": "Hattie Wade",
+      "department": "NLN"
+    }
+  ]
+}
