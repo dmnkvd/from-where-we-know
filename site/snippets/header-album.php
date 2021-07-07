@@ -32,9 +32,11 @@
   <div class="page">
     <header class="header">
 
-
-      <nav id="menu" class="menu">
-      <?php if ($page->hasPrevListed()): ?>
+      <nav>
+        <h2 class="title"> <a href="<?= $site->url() ?>">From Where We Know</h2>
+  
+        <ul class="nav-menu">
+        <?php if ($page->hasPrevListed()): ?>
       <a href="<?= $page->prevListed()->url() ?>"> Prev </a>
       <?php endif ?>
 
@@ -43,7 +45,7 @@
       <?php endif ?>
 
       <a href="<?= $page->parent()->url() ?>"> Close </a>
-      
-
+        </ul>
       </nav>
+
     </header>
