@@ -1,4 +1,4 @@
-<?php snippet('header') ?>
+<?php snippet('header-album') ?>
 
 <?php?>
         <figcaption class="artists-title-name">
