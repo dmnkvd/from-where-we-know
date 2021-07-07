@@ -19,14 +19,17 @@
   <?php endforeach ?>
 
 
-  <?php foreach($page->kirbytag() as $kirbytag): ?>
-    <div class="links"
+  
+  <div class="links">
+  
 <?php if ($page->link()->isNotEmpty()): ?>
+
 <?= kirbytag([
 'link' => $page->link(),
 'text'  => $page->descriptionlink()
 ]);
 ?>
+
 <?php endif ?>
 
 <?php if ($page->website()->isNotEmpty()): ?>
@@ -37,7 +40,7 @@
 ?>
 <?php endif ?>
 </div>
-<?php endforeach ?>
+
 
 </div>
 
