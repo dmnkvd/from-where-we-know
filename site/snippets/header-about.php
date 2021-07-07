@@ -27,7 +27,7 @@
   <body class="html-body" id="html-body">
   
       <nav>
-        <h2 class="title"> <a href="<?= $site->url() ?>">From Where We Know</h2>
+      <h2 class="title"> <a href="<?= $site->url() ?>">From Where We Know</a></h2>
 
         <div class="insta"><p><a href="https://www.instagram.com/kabk_gd_nln2021/">Instagram</a></p></div>
         

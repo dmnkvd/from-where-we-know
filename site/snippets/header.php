@@ -24,8 +24,8 @@
   <body class="html-body" id="html-body">
     <div class="content-wrapper">
       <nav>
-        <h2 class="title"> <a href="<?= $site->url() ?>">From <a href="<?= $pages->find('artist')->url() ?>">W</a>here We Know</h2>
-
+      <h2 class="title"> <a href="<?= $site->url() ?>">From Where We Know</a></h2>
+      
         <ul class="nav-menu">
           <li><a href="<?= $pages->find('artist')->url() ?>">We</a></li>
           <li><a href="<?= $pages->find('about')->url() ?>">About</a></li>
