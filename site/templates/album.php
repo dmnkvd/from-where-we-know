@@ -1,12 +1,10 @@
 <?php snippet('header-album') ?>
 
-<?php?>
         <figcaption class="artists-title-name">
           
            <p><?= $page->title() ?></p>
            <p><?= $page->projectname() ?></p>   
         </figcaption>
-      <?php?>
 
 
 <div class="wrapper">
