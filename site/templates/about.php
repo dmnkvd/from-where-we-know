@@ -1,15 +1,4 @@
-<?php
-/**
- * Templates render the content of your pages. 
- * They contain the markup together with some control structures like loops or if-statements.
- * The `$page` variable always refers to the currently active page. 
- * To fetch the content from each field we call the field name as a method on the `$page` object, e.g. `$page->title()`.
- * This example templates only echos the field values from the content file and doesn't need any special logic from a controller.
- * Snippets like the header, footer and intro contain markup used in multiple templates. They also help to keep templates clean.
- * More about templates: https://getkirby.com/docs/guide/templates/basics
- */
-?>
-
+<?php snippet('head') ?>
 <?php snippet('header-about') ?>
 
 <article class="about-us">
@@ -17,7 +6,7 @@
 
           Welcome to our exhibition, From Where We Know. </br></br>
 
-          We are <a href="<?= $pages->find('artist')->url() ?>">37 students</a> from the department of Graphic Design (BA) and <a href="<?= $pages->find('artist')->url() ?>">14 students</a> from the department Non Linear Narrative (MA) at the Royal Academy of Art, The Hague (KABK). We know you are curious about what we have been up to, maybe you're even wondering where we have been all this time.</br></br>
+          We are <a href="<?= $pages->find('projects')->url() ?>">37 students</a> from the department of Graphic Design (BA) and <a href="<?= $pages->find('projects')->url() ?>">14 students</a> from the department Non Linear Narrative (MA) at the Royal Academy of Art, The Hague (KABK). We know you are curious about what we have been up to, maybe you're even wondering where we have been all this time.</br></br>
 
           As emergent conditions have shaped us, we, like you, have been settling in our new geography, and asking ourselves which spaces we inhabit, and how do we travel across them. How do we create a sense of place now anyway, and how can we share it?</br></br>
 

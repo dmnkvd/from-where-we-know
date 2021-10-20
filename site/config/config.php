@@ -9,26 +9,35 @@
  */
 
 return [
+    'debug' => true,
+    'languages' => true,
     'auth' => [
         'methods' => [
             'password' => ['2fa' => true]
         ]
     ],
-    'routes' => [
-        [
-            'pattern' => '(:any)',
-            'action'  => function ($uid) {
-                $page = page($uid);
-                if (!$page) $page = page('artist/' . $uid);
-                if (!$page) $page = site()->errorPage();
-                return site()->visit($page);
-            }
-        ],
-        [
-            'pattern' => 'artist/(:any)',
-            'action'  => function ($uid) {
-                go($uid);
-            }
+        'routes' => [
+            [
+                'pattern' => '(:any)',
+                'action'  => function ($uid) {
+                    $page = page($uid);
+                    if (!$page) $page = page('archive/' . $uid);
+                    if (!$page) $page = page('projects/' . $uid);
+                    if (!$page) $page = site()->errorPage();
+                    return site()->visit($page);
+                }
+            ],
+            [
+                'pattern' => 'archive/(:any)',
+                'action'  => function ($uid) {
+                    go($uid);
+                }
+            ],
+            [
+                'pattern' => 'projects/(:any)',
+                'action'  => function ($uid) {
+                    go($uid);
+                }
+            ]
         ]
-    ]
 ];

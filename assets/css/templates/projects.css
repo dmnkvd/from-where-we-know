@@ -1,0 +1,18 @@
+#list-artist{
+ position: absolute;
+ top: 10vh;
+ font-family: var(--font-family-text);
+ text-align: center;
+ padding: var(--flow-space) 0;
+ width:100vw;
+ font-size: var(--font-size-m);
+ padding-bottom: 30vh;
+}
+
+#list-artist a{
+    text-decoration: none;
+}
+
+#list-artist a:hover{
+    text-decoration: underline 3px;
+}

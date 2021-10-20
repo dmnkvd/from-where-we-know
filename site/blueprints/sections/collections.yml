@@ -3,8 +3,8 @@
 # Sections can have different layouts and display additional information or a preview image
 # More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
 type: pages
-headline: Projects
-parent: kirby.page("projects")
+headline: Salon
+parent: kirby.page("salon")
 size: tiny
 info: "{{ page.images.count }} image(s)"
 layout: cards

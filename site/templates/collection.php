@@ -13,7 +13,7 @@
 
 <div class="first-pane">
 
- <?php foreach($gallery as $image): ?>
+ <?php foreach($salon as $image): ?>
   <div class="image">
     <img src="<?= $image->link()->or($image->url())->url() ?>">
   </div>

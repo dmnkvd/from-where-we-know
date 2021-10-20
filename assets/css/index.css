@@ -1,18 +1,18 @@
-@font-face {
+/* @font-face {
   font-family: contrast;
   src: url(font/Contrast-Regular.woff);
 }
 @font-face {
   font-family: pucc;
   src: url(font/PUCCrouwd-Regular.woff);
-}
+} */
 
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --clr-main: #dfdfdf;
+  --clr-main: white;
   --clr-dark: black;
   --font-size-xs: 0.85rem;
   --font-size-s: 1rem;

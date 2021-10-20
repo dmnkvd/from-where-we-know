@@ -1,14 +1,14 @@
 {
-    "name": "getkirby/starterkit",
-    "description": "Kirby Starterkit",
+    "name": "glasshouse",
+    "description": "A series of on-and-off-screen performances cross-pollinating the theatrical with the digital",
     "type": "project",
     "keywords": ["kirby", "cms", "starterkit"],
-    "homepage": "https://getkirby.com",
+    "homepage": "https://glasshouse.com",
     "authors": [
         {
-            "name": "Bastian Allgeier",
-            "email": "bastian@getkirby.com",
-            "homepage": "https://getkirby.com"
+            "name": "Tereza Novakova",
+            "email": "tereznovak@email.cz",
+            "homepage": "https://tereznovak.xyz"
         }
     ],
     "support": {
