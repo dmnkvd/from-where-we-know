@@ -17,6 +17,15 @@ little js tweaks\
 define structure\
 backend layout\
 import assets\
+form selector button\
+
+***Ideas:***\
+Images on hover - dots\
+scroll to, scroll up\
+how to do next-prev phone\
+sub-album pages thicker scroll?? and maybe moving\
+small frame for the rest?\
+slide in contect menu\
 
 ***Diagram:***
 -	HOME\
@@ -25,13 +34,13 @@ import assets\
 - 	presave pop out - minimase option - title, date, prelink, img\
 
 -	ABOUT\
-- text, members, imgs from grid to slider\
+-   text, members, imgs from grid to slider\
 
 -	MERCH\
- - subpages with "products" - link with the form\
+-   subpages with "products" - link with the form - one page - form selector button\
 
 -	ALBUMS\
--   two types\
+-   two types - images\
 
 -   Current album - subpages for singles\
 -   Past albums - one page for entire album\
