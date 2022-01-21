@@ -1,9 +1,0 @@
-Title: This page does not exist.
-
-----
-
-Intro: The page could not be found.
-
-----
-
-Text: Error 404

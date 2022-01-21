@@ -1,25 +1,25 @@
 {
-    "name": "glasshouse",
-    "description": "A series of on-and-off-screen performances cross-pollinating the theatrical with the digital",
+    "name": "Tolstoy",
+    "description": "",
     "type": "project",
-    "keywords": ["kirby", "cms", "starterkit"],
-    "homepage": "https://glasshouse.com",
+    "keywords": ["Tolstoy, pop, music, slovakian musicians"],
+    "homepage": "https://tolstoy.sk",
+    "description": "Tolstoys is a young quintet delivering mature sounding dream-pop with elements of electronic and acoustic music.",
     "authors": [
         {
             "name": "Tereza Novakova",
             "email": "tereznovak@email.cz",
-            "homepage": "https://tereznovak.xyz"
+            "homepage": "https://tereznovak.xyz/"
+        },
+        {
+            "name": "Marie Madonna",
+            "email": "contact@mariemadonna.com",
+            "homepage": "https://www.mariemadonna.com/"
         }
     ],
-    "support": {
-        "email": "support@getkirby.com",
-        "issues": "https://github.com/getkirby/starterkit/issues",
-        "forum": "https://forum.getkirby.com",
-        "source": "https://github.com/getkirby/starterkit"
-    },
     "require": {
-        "php": ">=7.1.0",
-        "getkirby/cms": "^3.0"
+        "php": ">=7.4.16",
+        "getkirby/cms": "^3.6"
     },
     "config": {
         "optimize-autoloader": true

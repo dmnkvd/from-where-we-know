@@ -1,0 +1,76 @@
+
+/* mailchimp */
+
+/* .mailchimp .footnote {
+  padding: var(--flow-space-half) var(--flow-space-half) 0 var(--flow-space-half);
+} */
+
+.mailchimp #mc-embedded-subscribe-form {
+    z-index: 9999;
+    width: 100%;
+  }
+  
+  .mailchimp #mc-embedded-subscribe-form #mc_embed_signup {
+    /* padding: calc(var(--flow-space-half)); */
+  }
+  
+  .mailchimp #mc-embedded-subscribe-form #mc_embed_signup .mc-field-group {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .mailchimp #mc-embedded-subscribe-form #mc_embed_signup .mc-field-group>* {
+    margin: 0 var(--flow-space-half) 0 var(--flow-space-half);
+  }
+  
+  .mailchimp #mc-embedded-subscribe-form #mc_embed_signup .mc-field-group .email {
+    flex: 1 1 auto;
+    height: auto;
+    background-color: transparent;
+    border: inset 0;
+    border-bottom: 0.5px solid white;
+    color: white;
+    inset:0;
+    font-family: var(--font-text);
+    font-size: var(--font-size-s);
+    text-align: center;
+    width:300px;
+  }
+  
+  .mailchimp #mc-embedded-subscribe-form #mc_embed_signup .mc-field-group #mc-embedded-subscribe {
+    height: auto;
+    background-color: transparent;
+    border: 0px solid black;
+    color:white;
+    padding:calc(var(--flow-space-full)*2) var(--flow-space-full) var(--flow-space-full) var(--flow-space-full);
+    font-family: var(--font-title);
+    font-size: var(--font-size-s);
+    border-radius: 0rem;
+  }
+  .mailchimp #mc-embedded-subscribe-form #mc_embed_signup .mc-field-group #mc-embedded-subscribe:hover {
+  -webkit-animation: navtextshadow 1s alternate ease-in-out forwards;
+  animation: navtextshadow 1s alternate ease-in-out forwards;
+  transition: all 1s ease; 
+  cursor: pointer;
+  }
+
+.align{
+    margin:47vh 25vw 0 25vw;
+    width: 50vw;
+    text-align: center;
+  }
+
+  .mailchimp #mc_embed_signup div.mce_inline_error{
+      background-color: transparent;
+      padding: 1.8em 0 0 0;
+      font-family: var(--font-family);
+      font-size: var(--font-size-s);  
+  }
+
+  .mailchimp #mce-responses{
+      padding-bottom:var(--flow-space-full);
+      font-family: var(--font-family);
+      font-size: var(--font-size-s);  
+      display: grid;
+  }

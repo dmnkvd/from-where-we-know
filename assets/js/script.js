@@ -1,8 +1,6 @@
-console.log("spript working");
+console.log("main spript working");
 
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-
 document.addEventListener('DOMContentLoaded', (event) => {
-    //the event occurred
   })

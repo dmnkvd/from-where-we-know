@@ -1,0 +1,28 @@
+
+
+/* // new GSAP 3 code 
+// https://codepen.io/GreenSock/pen/WNNNBpo */
+
+  
+.ball {
+z-index: -3;
+width: var(--ball);
+height: var(--ball);
+position: fixed;
+top: 0;
+left: 0;
+
+background-color: var(--clr-black);
+border-radius: 50%;
+user-select: none;
+pointer-events: none;
+}
+
+.ball.active {
+/* border: 1px solid var(--clr-red); */
+background-color: transparent;
+/* width: calc(var(--ball)*0.5);
+height: calc(var(--ball)*0.5); */
+transition: 0.3s;
+}
+

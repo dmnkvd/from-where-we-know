@@ -1,36 +1,120 @@
-# The site blueprint must have a title, the title may be different from the file name
-# The `site.yml` blueprint defines the look of the start page (Dashboard) of the Panel.
 title: Site
 
-# The site blueprint usually provides easy access to all main pages of the site.
-# In this example blueprint, we also show subpages of the `photography` and `notes` pages.
-# More about the site blueprint: https://getkirby.com/docs/reference/panel/blueprints/site
+deletable: false
+pages: false
+create: false
 
-# The layout of this form has two columns:
-columns:
-  # The first column has one section for the subpages of the `photography` page in card layout
-  # It reuses the pages section defined in `/site/blueprints/sections/albums.yml`
-  - width: 1/2
-    sections:
-      albums: sections/albums
+tabs:
+  content:
+    label: Content
+    columns:
+      - width: 1/2
+        sections:
+          pages:
+            type: pages
+            create: gallery
+            templates:
+              - bio
+              - gallery
+              - scenographie
+            options:
+              create: false
+              pages: false
+              deletable: false
+              changeStatus: false
+              changeTemplate: false
+              duplicate: false
+              changeSlug: false
+      # - width: 1/3
+      #   sections:
+      #     albums: sections/albums
+      - width: 1/2
+        fields:
+          upcoming:
+            type: files
+            label: Upcoming landing page image
+          coverupload:
+            type: info
+            label: Upload info
+            text: |
+              Please make sure the image has minimum width 1500px. 
+              Ideally ratio 16:9, if different, part of the image won't be visible
+              since it covers the background.
+              - Then use an online compression tool for example www.tinyjpg.com
+              - This helps the website to work smooth and fast on all devices. 
+          upcominglabel:
+            type: text
+            label: Running upcoming announcement
+          upcomingdate:
+            type: text
+            label: Running upcoming announcement date
+          upcomingnumber:
+            type: text
+            label: Running upcoming announcement hashtag number
+          upcomingtime:
+            type: text
+            label: Running upcoming announcement time
+          upcomingttitle:
+            type: text
+            label: Running upcoming announcement title
+          subtitle:
+            type: textarea
+            label: Subtitle of the entire project
+  style:
+    label: Style Settings
+    fields:
+        projectcolor:
+          label: Current project color
+          type:  text
+          help: |
+            Color appers on the landing apge footer and mobile menu.
+            Use the HEX code from the GH color palette.
+          width: 1/3
+        primarycolor:
+          label: Text color - black or white 
+          type: text
+          width: 1/3
+          help: |
+            To be changed accordingly the Current project color.
+            Color of the text running on the landing page and mobile menu.
+        info:
+          type: info
+          width: 1/3
+          label: Color palette
+          text: |
+            orange - #ff5310
+            green - #00ff00
+            violet - #ce30ff
+            blue - #0000ff
+            cyan - #00ffff
+            yellow - #ffff00
+            pink - #ff00ff
 
-  # The second column has two sections, `notes` and `pages`
-  - width: 1/2
-    sections:
-      # The `notes` section reuses the pages section defined in `/site/blueprints/sections/notes.yml`
-
-      # The `pages` pages section shows other main pages of the site
-      # Using the `templates` option, we limit which types of pages are shown
-      # Using the `create` option, we limit the type of page that can be created when a new page is created
-      # Note that the `sandbox` page and the `error` page that also exist in the content folder but use different blueprints thus do not show up in the list
-      # Since the error page's blueprint is set to `read: false`, it wouldn't show up here even if you added the error blueprint to the templates list
-      pages:
-        type: pages
-        create: projects
-        create: archive
-        templates:
-          - about
-          - home
-          - projects
-          - archive
-          - default  
+  policy:
+    label: Policy and Imprint
+    columns:
+      - width: 1/2
+        fields:
+          policy:
+            type: textarea
+            size: huge
+            label: Privacy Policy
+      - width: 1/2
+        fields:
+          imprint:
+            type: textarea
+            size: huge
+            label: Imprint
+  error:
+    label: Error message
+    columns:
+      - width: 1/2
+        fields:
+          error:
+            type: textarea
+            label: Error 404 text
+      - width: 1/2
+        fields:
+          goback:
+            type: textarea
+            label: Go back to our home page text

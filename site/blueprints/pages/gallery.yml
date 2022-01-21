@@ -1,0 +1,24 @@
+title: Architecture
+
+icon: file-image
+
+options:
+  delete: false
+  changeStatus: false
+  changeTemplate: false
+  duplicate: false
+  changeSlug: false
+
+sections:
+  drafts:
+    extends: sections/albums
+    width: 1/2
+    headline: Drafts
+    status: draft
+  listed:
+    extends: sections/albums
+    width: 1/2
+    headline: Published Albums
+    status: listed
+
+

@@ -1,0 +1,47 @@
+title: About
+
+icon: file-text
+
+options:
+  delete: false
+  changeStatus: false
+  changeTemplate: false
+  duplicate: false
+  changeSlug: false
+
+columns:
+  - width: 1/2
+    fields:
+      all:
+        type: info
+        label: Text info
+        text: |
+          All names in caps please. 
+          If you wish add link use the 4th button.
+      aboutus:
+        type: textarea
+        size: huge
+        label: About us body text
+      info:
+        type: textarea
+        label: Organized/produced by text
+      support:
+        type: textarea
+        label: Support text
+  - width: 1/2
+    fields:
+      instagram: 
+        type: text
+        label: Instagram link 
+      contact: 
+        type: text
+        label: Contact email
+      images:
+        type: files
+        layout: cards
+        template: image
+        info: "{{ file.dimensions }}"
+        min: 1
+        max: 8
+        size: small
+        help: Same rules with uploading as in the album section, max width/height 800px
