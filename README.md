@@ -18,14 +18,14 @@ define structure\
 backend layout\
 import assets\
 
-***Diagram:***\
+***Diagram:***
 -	HOME\
 -	Shortcut to current album release - songs in the circle\
 -	logo M or whatever input on laod\
 - 	presave pop out - minimase option - title, date, prelink, img\
 
 -	ABOUT\
-- text, members, imgs from grid to slider \
+- text, members, imgs from grid to slider\
 
 -	MERCH\
  - subpages with "products" - link with the form\
@@ -38,7 +38,7 @@ import assets\
 -   Subpages - videos, lyrics, credits, photos, remix - next - prev\
  
 -	SHOWS\ 
--   list of concerts \
+-   list of concerts\
 
 -   BOOKING CONTACT\ 
 -   contact emails - 3 ppl\ 
