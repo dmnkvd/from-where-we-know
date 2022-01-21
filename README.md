@@ -21,7 +21,7 @@ import assets\
 ***Diagram:***
 -	HOME\
 -	Shortcut to current album release - songs in the circle\
--	logo M or whatever input on laod\
+-	logo M or whatever input on load\
 - 	presave pop out - minimase option - title, date, prelink, img\
 
 -	ABOUT\
